@@ -1,0 +1,50 @@
+:root {
+  font-family: Arial, sans-serif;
+  color: #222;
+  background: #f7f7f7;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; }
+
+.page {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  padding: 24px;
+}
+
+.login-form {
+  width: min(100%, 360px);
+  padding: 28px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+h1 { margin: 0 0 8px; font-size: 24px; }
+.description { margin: 0 0 24px; color: #666; font-size: 14px; }
+.field { margin-bottom: 18px; }
+label { display: block; margin-bottom: 7px; font-size: 14px; font-weight: 700; }
+input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font: inherit;
+}
+input:focus { outline: 2px solid #222; outline-offset: 1px; }
+input[aria-invalid='true'] { border-color: #c62828; }
+button {
+  width: 100%;
+  padding: 11px;
+  border: 0;
+  border-radius: 4px;
+  background: #222;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+button:disabled { opacity: .55; cursor: wait; }
+.error { margin: 6px 0 0; color: #c62828; font-size: 13px; }
+.success { margin: 16px 0 0; color: #16723a; font-size: 14px; }
